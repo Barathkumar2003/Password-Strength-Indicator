@@ -1,0 +1,56 @@
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px 1px gray;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.box h1{
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.box input{
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.strength{
+  display: flex;
+  gap: 5px;
+  color: #fff;
+}
+
+#red{
+  width: 120px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+#yellow{
+  width: 120px;
+  height: 10px;
+  border-radius: 5px;
+}
+#green{
+  width: 120px;
+  height: 10px;
+  border-radius: 5px;
+}
+#password-value{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}

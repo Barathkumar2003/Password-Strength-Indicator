@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Indicator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">
+      <h1>Password Strength Indicator</h1>
+      <input type= "password"  placeholder="Type Password" id="password" 
+        onkeydown="enterPassword()"
+      >
+      <div class="strength">
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+      </div>
+      <p id="password-value"></p>
+    </div>
+  </div>
+
+  <script>
+    const red = document.getElementById('red');
+    const yellow = document.getElementById('yellow');
+    const green = document.getElementById('green');
+    const password = document.getElementById('password');
+    const value = password.value;
+    const display = document.getElementById('password-value');
+
+    function enterPassword() {
+        if(value <= 6) {
+          red.style.backgroundColor = 'red';
+          display.innerHTML = 'Your password is too weak'
+        } else if(value >= 6) {
+          yellow.style.backgroundColor = 'yellow';
+          display.innerHTML = 'Your password is medium'
+        }
+    }
+    
+  </script>
+  
+</body>
+</html>
